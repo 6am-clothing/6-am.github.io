@@ -1,0 +1,119 @@
+---
+layout: default
+section_id: clothing
+works:
+  - image: images/@stock/look-1.jpg
+    title: Item Title
+    link_to: clothing-item.html
+    class: shirt
+    desc: Some Text
+  - image: images/@stock/look-2.jpg
+    title: Item Title 2
+    link_to: clothing-item.html
+    class: jeans
+    desc: Item Teaser
+  - image: images/@stock/look-3.jpg
+    title: Item Title 3
+    link_to: clothing-item.html
+    class: shoes
+    desc: Item Teaser
+  - image: images/@stock/look-4.jpg
+    title: Item Title 4
+    link_to: clothing-item.html
+    class: outfit
+    desc: Item Teaser
+  - image: images/@stock/look-5.jpg
+    title: Item Title 5
+    link_to: clothing-item.html
+    class: brand outfit
+    desc: Item Teaser
+  - image: images/@stock/look-6.jpg
+    title: Item Title 6
+    link_to: clothing-item.html
+    class: shirt
+    desc: Item Teaser
+  - image: images/@stock/look-7.jpg
+    title: Item Title 7
+    link_to: clothing-item.html
+    class: jacket
+    desc: Item Teaser
+  - image: images/@stock/look-8.jpg
+    title: Item Title 8
+    link_to: clothing-item.html
+    class: shirt
+    desc: Item Teaser
+  - image: images/@stock/look-9.jpg
+    title: Item Title 9
+    link_to: clothing-item.html
+    class: clothes
+    desc: Item Teaser
+  - image: images/@stock/look-10.jpg
+    title: Item Title 10
+    link_to: clothing-item.html
+    class: shirt
+    desc: Item Teaser
+  - image: images/@stock/look-11.jpg
+    title: Item Title 11
+    link_to: clothing-item.html
+    class: brand jeans
+    desc: Item Teaser
+  - image: images/@stock/look-12.jpg
+    title: Item Title 12
+    link_to: clothing-item.html
+    class: jeans
+    desc: Item Teaser
+
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='jeans' href='#'>Jeans</a>
+          </li>
+          <li>
+            <a data-cat='shirt' href='#'>Shirt</a>
+          </li>
+          <li>
+            <a data-cat='brand' href='#'>Brand</a>
+          </li>
+          <li>
+            <a data-cat='outfit' href='#'>Outfit</a>
+          </li>
+          <li>
+            <a data-cat='jacket' href='#'>Jacket</a>
+          </li>
+        </ul>
+      </div>
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+              <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
+                <div class='thumb-info'>
+                  <h3>{{work.title}}</h3>
+                  <p>{{work.desc}}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href='#'>See all looks</a>
+      </p>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
