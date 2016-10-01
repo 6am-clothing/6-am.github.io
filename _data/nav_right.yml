@@ -1,0 +1,17 @@
+- name: Discover
+  url: https://vimeo.com/90607792
+  section_id: discover
+- name: Projects
+  path: portfolio.html
+  section_id: project
+# - name: About
+#   path: about.html
+#   section_id: about
+# - name: Clothing
+#   path: clothing.html
+#   section_id: clothing
+#   children:
+#     - name: Clothing
+#       path: clothing.html
+#     - name: Clothing item
+#       path: clothing-item.html

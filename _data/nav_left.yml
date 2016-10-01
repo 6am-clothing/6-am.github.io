@@ -1,0 +1,6 @@
+- name: Home
+  path: index.html
+  section_id: home
+- name: Mood Board
+  url: http://brennanmanuel.tumblr.com/
+  section_id: mood

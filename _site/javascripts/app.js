@@ -111,9 +111,8 @@ jQuery(document).foundation();
       });
     }
 
-
     // onepage nav scroll
-    if ( $("nav.top-bar.onepage").length > 0 ) {
+    if ( $("nav.top-bar.onepage").length > 0 ) {    
       $('.top-bar-section a[href=#top]').closest('li').addClass('active');
 
       var ctx = $("nav.top-bar.onepage");

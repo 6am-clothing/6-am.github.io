@@ -540,8 +540,8 @@ form input.error, form textarea.error {
 
 /*Footer */
 #footer {
-  background: #222;
-  color: #999;
+  background: white;
+  color: #333;
 }
 #footer h1 {
   margin-bottom: 25px;
@@ -3421,4 +3421,24 @@ body {
   .modFullscreenSlider .fullscreen_slideshow .video_wrap {
     display: none;
   }
+}
+
+
+.top-bar-section-left {
+  position: absolute;
+  left: 0;
+}
+.top-bar-section-right {
+  position: absolute;
+  right: 0;
+}
+.title-area.title-area-center{
+  position: absolute !important;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.title-area-center .name{
+  width: 155px;
+  margin: auto;
 }
